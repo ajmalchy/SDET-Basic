@@ -3,7 +3,7 @@
 const { expect } = require("chai");
 
 describe('Basic Functions webdriverIO', () => {
-    it('To launch a webpage', async () => {
+    it.only('To launch a webpage', async () => {
         await browser.url('https://www.weather.com/');
         await browser.pause(5000);
     // pause() - to pause the execution of a async wait function for x miliseconds
@@ -25,7 +25,7 @@ describe('Basic Functions webdriverIO', () => {
         })
 
 
-        it.only('Learning getWindowHandle, back, forward, refresh functions', async () => {
+        it('Learning getWindowHandle, back, forward, refresh functions', async () => {
 
         await browser.url('https://www.weather.com/');
 
